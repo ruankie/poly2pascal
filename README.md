@@ -17,7 +17,8 @@ Install `poly2pascal` with pip
 ```
 
 ## Requirements
-* numpy
+* pencv-python==4.6.0.66
+* geopandas==0.12.1
 
 ## Licence
 * [MIT](./LICENSE)
