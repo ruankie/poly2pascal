@@ -29,3 +29,5 @@ class CSVLoader():
             geometry=gpd.GeoSeries.from_wkt(pd_df[self.geometry_col]),
             # crs="epsg:3005",
         )
+
+        return geo_df
