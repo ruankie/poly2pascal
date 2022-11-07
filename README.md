@@ -22,3 +22,21 @@ Install `poly2pascal` with pip
 
 ## Licence
 * [MIT](./LICENSE)
+
+## TODO
+### Essential
+- [ ] add jupyterlab to dev requirements
+- [ ] run through example notebook to ensure everythin works as expected
+- [ ] build and publish on pypi test
+- [ ] build and publish to pypi
+- [ ] format with black
+- [ ] add badges to README
+- [ ] publish on Zindi
+
+### Optional
+- [ ] pylint score >= 8.0
+- [ ] update docstrings
+- [ ] add Sphinx docs
+- [ ] add unit tests
+- [ ] add github actions for automated testing
+- [ ] add code coverage
