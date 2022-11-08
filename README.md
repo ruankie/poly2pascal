@@ -49,3 +49,6 @@ xmla.get_all_xml_annotations(img_format=".jpg")
 - [ ] add unit tests
 - [ ] add github actions for automated testing
 - [ ] add code coverage
+
+## References
+- [Build python package](https://towardsdatascience.com/how-to-convert-your-python-project-into-a-package-installable-through-pip-a2b36e8ace10)
