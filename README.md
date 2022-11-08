@@ -1,9 +1,9 @@
 [![PyPI - Python Version](https://img.shields.io/pypi/pyversions/poly2pascal)](https://pypi.org/project/poly2pascal/)
-[![GitHub contributors](https://img.shields.io/github/contributors/ruankie/frontier-rl)](https://github.com/ruankie/frontier-rl/graphs/contributors)
-[![GitHub last commit](https://img.shields.io/github/last-commit/ruankie/frontier-rl)](https://github.com/ruankie/frontier-rl/commits/main)
-[![GitHub forks](https://img.shields.io/github/forks/ruankie/frontier-rl)](https://github.com/ruankie/frontier-rl/network)
-[![GitHub stars](https://img.shields.io/github/stars/ruankie/frontier-rl)](https://github.com/ruankie/frontier-rl/stargazers)
-[![GitHub license](https://img.shields.io/github/license/ruankie/frontier-rl)](https://github.com/ruankie/frontier-rl/blob/main/LICENSE)
+[![GitHub contributors](https://img.shields.io/github/contributors/ruankie/poly2pascal)](https://github.com/ruankie/poly2pascal/graphs/contributors)
+[![GitHub last commit](https://img.shields.io/github/last-commit/ruankie/poly2pascal)](https://github.com/ruankie/poly2pascal/commits/main)
+[![GitHub forks](https://img.shields.io/github/forks/ruankie/poly2pascal)](https://github.com/ruankie/poly2pascal/network)
+[![GitHub stars](https://img.shields.io/github/stars/ruankie/poly2pascal)](https://github.com/ruankie/poly2pascal/stargazers)
+[![GitHub license](https://img.shields.io/github/license/ruankie/poly2pascal)](https://github.com/ruankie/poly2pascal/blob/main/LICENSE)
 
 # poly2pascal
 Convert POLYGON bounding boxes from `.csv` files to `.xml` annotation files in the Pascal VOC format for computer vision projects.
@@ -34,7 +34,7 @@ xmla.get_all_xml_annotations(img_format=".jpg")
 ```
 
 ## Licence
-* [MIT](./LICENSE)
+* [MIT](https://github.com/ruankie/poly2pascal/blob/main/LICENSE)
 
 ## Authors
 - [@ruankie](https://www.github.com/ruankie)
