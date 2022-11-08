@@ -1,3 +1,10 @@
+[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/poly2pascal)](https://pypi.org/project/poly2pascal/)
+[![GitHub contributors](https://img.shields.io/github/contributors/ruankie/frontier-rl)](https://github.com/ruankie/frontier-rl/graphs/contributors)
+[![GitHub last commit](https://img.shields.io/github/last-commit/ruankie/frontier-rl)](https://github.com/ruankie/frontier-rl/commits/main)
+[![GitHub forks](https://img.shields.io/github/forks/ruankie/frontier-rl)](https://github.com/ruankie/frontier-rl/network)
+[![GitHub stars](https://img.shields.io/github/stars/ruankie/frontier-rl)](https://github.com/ruankie/frontier-rl/stargazers)
+[![GitHub license](https://img.shields.io/github/license/ruankie/frontier-rl)](https://github.com/ruankie/frontier-rl/blob/main/LICENSE)
+
 # poly2pascal
 Convert POLYGON bounding boxes from `.csv` files to `.xml` annotation files in the Pascal VOC format for computer vision projects.
 
@@ -36,10 +43,10 @@ xmla.get_all_xml_annotations(img_format=".jpg")
 ### Essential
 - [x] add jupyterlab to dev requirements
 - [x] run through example notebook to ensure everythin works as expected
-- [ ] build and publish on pypi test
-- [ ] build and publish to pypi
+- [x] build and publish on pypi test
+- [x] build and publish to pypi
 - [ ] format with black
-- [ ] add badges to README
+- [x] add badges to README
 - [ ] show example of csv data schema
 - [ ] fix docstrings
 
