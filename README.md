@@ -25,8 +25,8 @@ Install `poly2pascal` with pip
 
 ## TODO
 ### Essential
-- [ ] add jupyterlab to dev requirements
-- [ ] run through example notebook to ensure everythin works as expected
+- [x] add jupyterlab to dev requirements
+- [x] run through example notebook to ensure everythin works as expected
 - [ ] build and publish on pypi test
 - [ ] build and publish to pypi
 - [ ] format with black
