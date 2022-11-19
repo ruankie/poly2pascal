@@ -1,4 +1,4 @@
-[![p2p Logo](https://github.com/ruankie/poly2pascal/blob/main/images/p2p_250_250.png)](https://github.com/ruankie/poly2pascal)
+[![p2p Logo](https://github.com/ruankie/poly2pascal/blob/main/images/p2p_250_250.png?raw=true)](https://github.com/ruankie/poly2pascal)
 
 [![Install PyPI](https://img.shields.io/badge/install-pypi-brightgreen)](https://pypi.org/project/poly2pascal/)
 [![API docs](https://img.shields.io/badge/docs-api-blue)](https://ruankie.github.io/poly2pascal/)
