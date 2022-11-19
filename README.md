@@ -1,7 +1,7 @@
 [![p2p Logo](https://github.com/ruankie/poly2pascal/blob/main/images/p2p_250_250.png)](https://github.com/ruankie/poly2pascal)
 
 [![Install PyPI](https://img.shields.io/badge/install-pypi-brightgreen)](https://pypi.org/project/poly2pascal/)
-[![API docs](https://img.shields.io/badge/docs-api-blue)](https://poly2pascal.github.io/)
+[![API docs](https://img.shields.io/badge/docs-api-blue)](https://ruankie.github.io/poly2pascal/)
 [![GitHub contributors](https://img.shields.io/github/contributors/ruankie/poly2pascal)](https://github.com/ruankie/poly2pascal/graphs/contributors)
 [![GitHub last commit](https://img.shields.io/github/last-commit/ruankie/poly2pascal)](https://github.com/ruankie/poly2pascal/commits/main)
 [![GitHub forks](https://img.shields.io/github/forks/ruankie/poly2pascal)](https://github.com/ruankie/poly2pascal/network)
@@ -9,7 +9,7 @@
 [![GitHub license](https://img.shields.io/github/license/ruankie/poly2pascal)](https://github.com/ruankie/poly2pascal/blob/main/LICENSE)
 
 # poly2pascal
-Convert POLYGON bounding boxes from `.csv` files to `.xml` annotation files in the Pascal VOC format for computer vision projects. Read the package documentation [here](https://poly2pascal.github.io/).
+Convert POLYGON bounding boxes from `.csv` files to `.xml` annotation files in the Pascal VOC format for computer vision projects. Read the package documentation [here](https://ruankie.github.io/poly2pascal/).
 
 ## Installation
 Install `poly2pascal` with pip
