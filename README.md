@@ -1,6 +1,7 @@
-[![p2p Logo](https://github.com/ruankie/poly2pascal/blob/feature/docs/images/p2p_500_500.png)](https://github.com/ruankie/poly2pascal)
+[![p2p Logo](https://github.com/ruankie/poly2pascal/blob/main/images/p2p_250_250.png)](https://github.com/ruankie/poly2pascal)
 
-[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/poly2pascal)](https://pypi.org/project/poly2pascal/)
+[![Install PyPI](https://img.shields.io/badge/install-pypi-brightgreen)](https://pypi.org/project/poly2pascal/)
+[![API docs](https://img.shields.io/badge/docs-api-blue)](https://pypi.org/project/poly2pascal/)
 [![GitHub contributors](https://img.shields.io/github/contributors/ruankie/poly2pascal)](https://github.com/ruankie/poly2pascal/graphs/contributors)
 [![GitHub last commit](https://img.shields.io/github/last-commit/ruankie/poly2pascal)](https://github.com/ruankie/poly2pascal/commits/main)
 [![GitHub forks](https://img.shields.io/github/forks/ruankie/poly2pascal)](https://github.com/ruankie/poly2pascal/network)
