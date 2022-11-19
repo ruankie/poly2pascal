@@ -54,14 +54,10 @@ This package requires a `.csv` file with the following format of images and poly
 
 ## TODO
 - [x] pylint score >= 8.0
-- [ ] add Sphinx docs
-  - [ ] build static
-  - [ ] link in readme
-  - [ ] link in pypi
+- [x] add Sphinx docs
 - [ ] add unit tests
 - [ ] add github actions for automated testing
 - [ ] add code coverage
-- [ ] add logo and graphics
 
 ## References
 - [Build python package](https://towardsdatascience.com/how-to-convert-your-python-project-into-a-package-installable-through-pip-a2b36e8ace10)
