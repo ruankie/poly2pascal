@@ -48,5 +48,15 @@ html_theme_options = {
     'titles_only': False
 }
 
+html_context = {
+    "display_github": True, # Integrate GitHub
+    "github_user": "ruankie", # Username
+    "github_repo": "poly2pascal", # Repo name
+    "github_version": "main", # Version
+    "conf_py_path": "/docs/", # Path in the checkout to the docs root
+}
+
+html_favicon = '../images/p2p.ico'
+
 # a logo (delete line if you don't want to display one)
-html_logo = '../images/p2p_500_500.png.png'
+# html_logo = '../images/p2p_100_100.png'
