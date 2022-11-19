@@ -1,4 +1,7 @@
-[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/poly2pascal)](https://pypi.org/project/poly2pascal/)
+[![p2p Logo](https://github.com/ruankie/poly2pascal/blob/main/images/p2p_250_250.png)](https://github.com/ruankie/poly2pascal)
+
+[![Install PyPI](https://img.shields.io/badge/install-pypi-brightgreen)](https://pypi.org/project/poly2pascal/)
+[![API docs](https://img.shields.io/badge/docs-api-blue)](https://poly2pascal.github.io/)
 [![GitHub contributors](https://img.shields.io/github/contributors/ruankie/poly2pascal)](https://github.com/ruankie/poly2pascal/graphs/contributors)
 [![GitHub last commit](https://img.shields.io/github/last-commit/ruankie/poly2pascal)](https://github.com/ruankie/poly2pascal/commits/main)
 [![GitHub forks](https://img.shields.io/github/forks/ruankie/poly2pascal)](https://github.com/ruankie/poly2pascal/network)
@@ -6,7 +9,7 @@
 [![GitHub license](https://img.shields.io/github/license/ruankie/poly2pascal)](https://github.com/ruankie/poly2pascal/blob/main/LICENSE)
 
 # poly2pascal
-Convert POLYGON bounding boxes from `.csv` files to `.xml` annotation files in the Pascal VOC format for computer vision projects.
+Convert POLYGON bounding boxes from `.csv` files to `.xml` annotation files in the Pascal VOC format for computer vision projects. Read the package documentation [here](https://poly2pascal.github.io/).
 
 ## Installation
 Install `poly2pascal` with pip
@@ -50,22 +53,15 @@ This package requires a `.csv` file with the following format of images and poly
 - [@ruankie](https://www.github.com/ruankie)
 
 ## TODO
-### Essential
-- [x] add jupyterlab to dev requirements
-- [x] run through example notebook to ensure everythin works as expected
-- [x] build and publish on pypi test
-- [x] build and publish to pypi
-- [x] format with black
-- [x] add badges to README
-- [x] show example of csv data schema
-- [x] fix docstrings
-
-### Optional
 - [x] pylint score >= 8.0
 - [ ] add Sphinx docs
+  - [ ] build static
+  - [ ] link in readme
+  - [ ] link in pypi
 - [ ] add unit tests
 - [ ] add github actions for automated testing
 - [ ] add code coverage
+- [ ] add logo and graphics
 
 ## References
 - [Build python package](https://towardsdatascience.com/how-to-convert-your-python-project-into-a-package-installable-through-pip-a2b36e8ace10)
