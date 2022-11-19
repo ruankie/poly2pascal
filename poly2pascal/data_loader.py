@@ -3,14 +3,13 @@ import geopandas as gpd
 
 
 class CSVLoader:
-    def __init__(
-        self, csv_file_path: str, geometry_col: str = "geometry"
-    ) -> None:
+    def __init__(self, csv_file_path: str, geometry_col: str = "geometry") -> None:
         """
         Load csv files containing polygon bounding box information.
 
         Args:
-            csv_file_path (str): Path to csv file that contains bounding box information.
+            csv_file_path (str): 
+            Path to csv file that contains bounding box information.
             geometry_col (str): Column name containing POLYGON bounding box information.
 
         Returns:

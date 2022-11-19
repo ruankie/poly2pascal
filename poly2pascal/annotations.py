@@ -6,14 +6,21 @@ import glob
 from poly2pascal.data_loader import CSVLoader
 
 
-class XMLAnnotator():
+class XMLAnnotator:
     """
     Class wiht methods for getting xml annotations
     in Pascal VOC format.
     """
+
     def __init__(
-        self, images_path:str, csv_file_path: str, image_name_col: str, image_label_col: str, 
-        xml_output_path:str, geometry_col: str = "geometry", xml_end_content:str = "\n</annotation>"
+        self,
+        images_path: str,
+        csv_file_path: str,
+        image_name_col: str,
+        image_label_col: str,
+        xml_output_path: str,
+        geometry_col: str = "geometry",
+        xml_end_content: str = "\n</annotation>",
     ) -> None:
         """
         Constructs XMLAnnotator instance.
@@ -41,7 +48,15 @@ class XMLAnnotator():
         self.geo_df = self.data_loader.load_data()
 
     def _get_start_of_img_annotation(
-        self, folder, filename, path, width, height, depth=3, segmented=0, database="Unknown"
+        self,
+        folder,
+        filename,
+        path,
+        width,
+        height,
+        depth=3,
+        segmented=0,
+        database="Unknown",
     ) -> str:
         """
         Get start of xml file that specifies image label in
@@ -79,9 +94,16 @@ class XMLAnnotator():
         return xml_start_str
 
     def _get_annotaion_for_object(
-        self, name, xmin, xmax, ymin, ymax,
-        pose="Unspecified", truncated=0,
-        difficult=0, occluded=0,
+        self,
+        name,
+        xmin,
+        xmax,
+        ymin,
+        ymax,
+        pose="Unspecified",
+        truncated=0,
+        difficult=0,
+        occluded=0,
     ) -> str:
         """
         Return the populated object section of an image label in
@@ -134,10 +156,10 @@ class XMLAnnotator():
         """
         im = cv2.imread(os.path.join(self.images_path, image_name))
         h, w, c = im.shape
-        del im # remove to reduce memory usage
+        del im  # remove to reduce memory usage
         return h, w, c
 
-    def _get_object_label_and_bbox_limits(self, image_name:str) -> np.ndarray:
+    def _get_object_label_and_bbox_limits(self, image_name: str) -> np.ndarray:
         """
         Get bounding box limits and object name
         from loaded data. This is used later to 
@@ -156,7 +178,9 @@ class XMLAnnotator():
         bounds_df = pd.concat([bounds_df, bounds_df.bounds], axis=1)
 
         # get object details
-        object_details = bounds_df[[self.image_label_col, "minx", "maxx", "miny", "maxy"]].values
+        object_details = bounds_df[
+            [self.image_label_col, "minx", "maxx", "miny", "maxy"]
+        ].values
 
         return object_details
 
@@ -175,14 +199,14 @@ class XMLAnnotator():
         # get details to populate xml annotation with
         h, w, c = self._get_image_size(image_name)
         xml_start_content = self._get_start_of_img_annotation(
-            folder="", 
-            filename=image_name, 
-            path=self.images_path, 
-            width=w, 
-            height=h, 
-            depth=c, 
-            segmented=0, 
-            database="Unknown"
+            folder="",
+            filename=image_name,
+            path=self.images_path,
+            width=w,
+            height=h,
+            depth=c,
+            segmented=0,
+            database="Unknown",
         )
         object_details = self._get_object_label_and_bbox_limits(image_name)
 
@@ -206,7 +230,7 @@ class XMLAnnotator():
         final_xml_content = "".join(final_xml_content_list)
         return final_xml_content
 
-    def _write_to_xml_file(self, image_name:str, xml_content:str) -> None:
+    def _write_to_xml_file(self, image_name: str, xml_content: str) -> None:
         """
         Create XML file with annotation content 
         at desired location.
@@ -219,13 +243,12 @@ class XMLAnnotator():
             None
         """
         xml_file_path = os.path.join(
-            self.xml_output_path,
-            image_name.replace(".jpg",".xml")
-            )
+            self.xml_output_path, image_name.replace(".jpg", ".xml")
+        )
         with open(xml_file_path, "w") as f_:
             f_.write(xml_content)
 
-    def get_all_xml_annotations(self, img_format:str = ".jpg") -> None:
+    def get_all_xml_annotations(self, img_format: str = ".jpg") -> None:
         """
         Get all annotations of images with given
         file format. XML annotation files will
@@ -239,7 +262,9 @@ class XMLAnnotator():
             None
         """
         # get all images in folder
-        all_image_names = [os.path.basename(p) for p in glob.glob(f"{self.images_path}/*{img_format}")]
+        all_image_names = [
+            os.path.basename(p) for p in glob.glob(f"{self.images_path}/*{img_format}")
+        ]
         # get their xml anotations and save to file
         for img_name in all_image_names:
             xml_content = self._get_image_xml_annotaion(img_name)
