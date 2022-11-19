@@ -49,7 +49,14 @@ class XMLAnnotator():
         image.
 
         Args:
-            x (type): descr
+            folder (str): Folder where image is located.
+            filename (sr): File name of image.
+            path (str): Path to image.
+            width (int): Image width in number of pixels.
+            height (int): Image height in number of pixels.
+            depth (int): Number of colour channels in image.
+            segmented (int): Optional metadata for annotaion.
+            database (str): Optional metadata for annotation.
 
         Returns:
             str: Start of XML annotation file.
@@ -82,7 +89,15 @@ class XMLAnnotator():
         an image.
 
         Args:
-            x (type): descr
+            name (str): Object label.
+            xmin (float): Bounding box minimum x-value.
+            xmax (float): Bounding box maximum x-value.
+            ymin (float): Bounding box minimum y-value.
+            ymax (float): Bounding box maximum y-value.
+            pose (str): Optional metadata for annotation.
+            truncated (int): Optional metadata for annotation.
+            difficult (int): Optional metadata for annotation.
+            occluded (int): Optional metadata for annotation.
 
         Returns:
             str: Annotation content of an object in the image.
@@ -112,10 +127,10 @@ class XMLAnnotator():
         new image.
 
         Args:
-            x (type): descr
+            image_name (str): Name of image.
 
         Returns:
-            tuple: Tuple of imafe height, width, and number of colour channels.
+            tuple: Tuple of image height, width, and number of colour channels.
         """
         im = cv2.imread(os.path.join(self.images_path, image_name))
         h, w, c = im.shape
@@ -152,7 +167,7 @@ class XMLAnnotator():
         This has to be done for each image.
 
         Args:
-            x (type): Descr.
+            image_name (str): Name of image for which to get object annotations.
 
         Returns:
             str: Entire xml content that makes up the annotation of an image.
@@ -195,6 +210,13 @@ class XMLAnnotator():
         """
         Create XML file with annotation content 
         at desired location.
+
+        Args:
+            image_name (str): Name of image for which to get object annotations.
+            xml_content (str): XML annotation in Pascal VOC format.
+
+        Returns:
+            None
         """
         xml_file_path = os.path.join(
             self.xml_output_path,
