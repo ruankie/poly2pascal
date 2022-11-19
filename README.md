@@ -1,3 +1,5 @@
+[![p2p Logo](https://github.com/ruankie/poly2pascal/blob/feature/docs/images/p2p_500_500.png)](https://github.com/ruankie/poly2pascal)
+
 [![PyPI - Python Version](https://img.shields.io/pypi/pyversions/poly2pascal)](https://pypi.org/project/poly2pascal/)
 [![GitHub contributors](https://img.shields.io/github/contributors/ruankie/poly2pascal)](https://github.com/ruankie/poly2pascal/graphs/contributors)
 [![GitHub last commit](https://img.shields.io/github/last-commit/ruankie/poly2pascal)](https://github.com/ruankie/poly2pascal/commits/main)
@@ -50,22 +52,15 @@ This package requires a `.csv` file with the following format of images and poly
 - [@ruankie](https://www.github.com/ruankie)
 
 ## TODO
-### Essential
-- [x] add jupyterlab to dev requirements
-- [x] run through example notebook to ensure everythin works as expected
-- [x] build and publish on pypi test
-- [x] build and publish to pypi
-- [x] format with black
-- [x] add badges to README
-- [x] show example of csv data schema
-- [x] fix docstrings
-
-### Optional
 - [x] pylint score >= 8.0
 - [ ] add Sphinx docs
+  - [ ] build static
+  - [ ] link in readme
+  - [ ] link in pypi
 - [ ] add unit tests
 - [ ] add github actions for automated testing
 - [ ] add code coverage
+- [ ] add logo and graphics
 
 ## References
 - [Build python package](https://towardsdatascience.com/how-to-convert-your-python-project-into-a-package-installable-through-pip-a2b36e8ace10)
