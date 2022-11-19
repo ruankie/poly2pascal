@@ -49,4 +49,4 @@ html_theme_options = {
 }
 
 # a logo (delete line if you don't want to display one)
-# html_logo = 'https://link/to/logo.png'
+html_logo = '../images/p2p_500_500.png.png'
