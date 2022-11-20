@@ -51,13 +51,3 @@ This package requires a `.csv` file with the following format of images and poly
 
 ## Authors
 - [@ruankie](https://www.github.com/ruankie)
-
-## TODO
-- [x] pylint score >= 8.0
-- [x] add Sphinx docs
-- [ ] add unit tests
-- [ ] add github actions for automated testing
-- [ ] add code coverage
-
-## References
-- [Build python package](https://towardsdatascience.com/how-to-convert-your-python-project-into-a-package-installable-through-pip-a2b36e8ace10)
