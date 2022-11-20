@@ -2,7 +2,6 @@
 
 [![Install PyPI](https://img.shields.io/badge/install-pypi-brightgreen)](https://pypi.org/project/poly2pascal/)
 [![API docs](https://img.shields.io/badge/docs-latest-blue)](https://ruankie.github.io/poly2pascal/)
-![Coverage badge](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/wiki/ruankie/poly2pascal/coverage-comment-badge.json)
 [![GitHub license](https://img.shields.io/github/license/ruankie/poly2pascal)](https://github.com/ruankie/poly2pascal/blob/main/LICENSE)
 [![GitHub stars](https://img.shields.io/github/stars/ruankie/poly2pascal)](https://github.com/ruankie/poly2pascal/stargazers)
 [![GitHub forks](https://img.shields.io/github/forks/ruankie/poly2pascal)](https://github.com/ruankie/poly2pascal/network)
