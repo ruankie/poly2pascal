@@ -1,12 +1,14 @@
 [![p2p Logo](https://github.com/ruankie/poly2pascal/blob/main/images/p2p_250_250.png?raw=true)](https://github.com/ruankie/poly2pascal)
 
 [![Install PyPI](https://img.shields.io/badge/install-pypi-brightgreen)](https://pypi.org/project/poly2pascal/)
-[![API docs](https://img.shields.io/badge/docs-api-blue)](https://ruankie.github.io/poly2pascal/)
+[![API docs](https://img.shields.io/badge/docs-latest-blue)](https://ruankie.github.io/poly2pascal/)
+![Coverage badge](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/wiki/ruankie/poly2pascal/coverage-comment-badge.json)
+[![GitHub license](https://img.shields.io/github/license/ruankie/poly2pascal)](https://github.com/ruankie/poly2pascal/blob/main/LICENSE)
+[![GitHub stars](https://img.shields.io/github/stars/ruankie/poly2pascal)](https://github.com/ruankie/poly2pascal/stargazers)
+[![GitHub forks](https://img.shields.io/github/forks/ruankie/poly2pascal)](https://github.com/ruankie/poly2pascal/network)
 [![GitHub contributors](https://img.shields.io/github/contributors/ruankie/poly2pascal)](https://github.com/ruankie/poly2pascal/graphs/contributors)
 [![GitHub last commit](https://img.shields.io/github/last-commit/ruankie/poly2pascal)](https://github.com/ruankie/poly2pascal/commits/main)
-[![GitHub forks](https://img.shields.io/github/forks/ruankie/poly2pascal)](https://github.com/ruankie/poly2pascal/network)
-[![GitHub stars](https://img.shields.io/github/stars/ruankie/poly2pascal)](https://github.com/ruankie/poly2pascal/stargazers)
-[![GitHub license](https://img.shields.io/github/license/ruankie/poly2pascal)](https://github.com/ruankie/poly2pascal/blob/main/LICENSE)
+
 
 # poly2pascal
 Convert POLYGON bounding boxes from `.csv` files to `.xml` annotation files in the Pascal VOC format for computer vision projects. Read the package documentation [here](https://ruankie.github.io/poly2pascal/).
